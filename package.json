@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "Mocha.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Bryan",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "devDependencies": {
+    "chai": "^5.3.3",
+    "mocha": "^11.8.0"
+  }
+}
