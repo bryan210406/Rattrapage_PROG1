@@ -1,18 +1,21 @@
 function NegatifPositif(array) {
     let result = [];
+    let position = 0;
+
     for (let i = 0; i < array.length; i++) {
         if (array[i] <= 0) {
-            result.push(array[i]);
+            result[position] = array[i];
+            position++;
         }
     }
 
     for (let i = 0; i < array.length; i++) {
         if (array[i] > 0) {
-            result.push(array[i]);
+            result[position] = array[i];
+            position++;
         }
     }
 
     return result;
 }
-console.log(NegatifPositif([3, -1, 0, 4, -2, 5, -3] ));
-console.log(NegatifPositif([-5, -3, 2, 4, 0])); 
+console.log(NegatifPositif([-5, -3, 2, 4, 0]));

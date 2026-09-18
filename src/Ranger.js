@@ -1,14 +1,17 @@
 function Ranger(array) {
     let result = [];
+    let position = 0;
     for (let i = 0; i < array.length; i++) {
         if (array[i] <= 0) {
-            result.push(array[i]);
+            result[position] = array[i];
+            position++;
         }
     }
 
     for (let i = 0; i < array.length; i++) {
         if (array[i] > 0) {
-            result.push(array[i]);
+            result[position] = array[i];
+            position++;
         }
     }
 
