@@ -18,3 +18,4 @@ function Echanger(array) {
     return result;
 }
 console.log(Echanger([0, 1, 0]));
+console.log(Echanger([1, 0, 0]));
